@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chaos Button Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="center">
+            <h1>Welcome to the Chaos Button Game</h1>
+        </div>
+
+        <div>
+            <h3>Instructions:</h3>
+            <p>1. Select how many colours you want to play with.</p>
+            <p>2. Click Generate Colours to randomnly generate your desired number of colours and target colour</p>
+            <p>3. Each time you click on a button it will turn a different colour.</p>
+            <p>Your objective is to get them all to match</p>
+            <p>Oh, in order to make the experience as uncomfortable as possible, the background colour will change too</p>
+            <p>Thanks for checking out this page! Have a look at more stuff I've built on my <a href="https://github.com/hannvm">github</a></p>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <form action="/submit" id="colorsForm">
+                <label for="num">How many colours would you like to generate?</label>
+                <input type="number" id="num" name="num" min="3" max="20">
+                <button>Generate</button>
+            </form>
+            <form action="/submit" id="genRandForm">
+                <button id="genRand">Random Number</button>
+            </form>
+        </div>
+
+        <br>
+
+        <div>
+            <p>Your target colour is: </p>
+            <div id ="targetColorBlock">(Generate a number of colors to get your colour)  </div>
+            <P id="colorsPlayingWith">You are playing with: </P>
+        </div>
+        <br>
+        <div>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+        </div>
+
+
+
+
+
+
+        <script src="app.js" async defer></script>
+    </body>
+</html>
